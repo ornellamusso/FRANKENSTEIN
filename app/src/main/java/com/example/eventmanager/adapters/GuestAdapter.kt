@@ -8,7 +8,7 @@ import com.example.eventmanager.data.entities.Guest
 import com.example.eventmanager.databinding.ItemGuestBinding
 
 class TaskAdapter(
-    var items: List<Event>,
+    var items: List<Guest>,
     //val onItemClick: (Int) -> Unit,
     val onItemDelete: (Int) -> Unit,
     val onItemEdit: (Int) -> Unit
@@ -45,7 +45,7 @@ class TaskAdapter(
 
 class GuestViewHolder(val binding: ItemGuestBinding) : RecyclerView.ViewHolder(binding.root) {
 
-    fun init(guest: Event) {
-        binding.
+    fun init(guest: Guest) {
+
     }
 }
