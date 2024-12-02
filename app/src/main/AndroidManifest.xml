@@ -13,6 +13,15 @@
         android:theme="@style/Theme.EventManager"
         tools:targetApi="31">
         <activity
+            android:name=".activities.GuestAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EventAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EventListActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.GuestListActivity"
             android:exported="false" />
         <activity

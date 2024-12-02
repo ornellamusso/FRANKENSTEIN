@@ -1,5 +1,7 @@
 package com.example.eventmanager.activities
 
+import android.content.Intent
+import android.media.metrics.Event
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -15,6 +17,28 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.buttonInvitados.setOnClickListener {
+
+            navigateToGuestList()
+
+
+        }
+
+        binding.buttonEventos.setOnClickListener {
+            navigateToEventList()
+        }
 
     }
+
+
+    private fun navigateToGuestList() {
+        val intent = Intent(this, GuestListActivity::class.java)
+        startActivity(intent)
+    }
+    private fun navigateToEventList() {
+        val intent = Intent(this, EventListActivity::class.java)
+        startActivity(intent)
+    }
+
+
 }
